@@ -13,3 +13,15 @@ def display_board(board):
     print('  |   |')
     print(' '+ board[7]+'| '+ board[8] +' | '+ board[9])
     print('  |   |')
+
+def player_input():
+    '''
+    OUTPUT = (Player 1 marker, Player 2 marker)
+    '''
+    marker = ''
+    while marker !='X' and marker !='O':
+        marker = input('Player 1 Choose X or O: ').upper()
+        if marker == 'X':
+            return ('X','O')
+        else :
+            return ('O','X')
